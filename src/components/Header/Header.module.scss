@@ -1,0 +1,29 @@
+@use '../../styles/mixins/mixins' as mixins;
+
+.header {
+	width: 100%;
+	padding: 20px 30px;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+
+	&__logo {
+		width: 200px;
+	}
+
+	&__buttonContainer {
+		display: flex;
+		box-sizing: border-box;
+		padding: 0 5px;
+		gap: 20px;
+		align-items: center;
+
+		.header__link {
+			transition: transform 0.3s ease, color 0.3s ease;
+
+			&:hover {
+				@include mixins.hoverByLinks();
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+@mixin hoverByLinks {
+	color: rgb(69, 173, 233);
+	transform: scale(1.2) rotate(-3deg);
+}
+@mixin defaultButton {
+	border: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+@mixin fontSize($size, $weight, $height) {
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $height;
+}

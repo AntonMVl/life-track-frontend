@@ -1,0 +1,39 @@
+@use '../../styles/mixins/mixins' as mixins;
+
+.footer {
+	width: 100%;
+	padding: 20px 30px;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	margin-top: auto;
+
+	&__iconLinkContainer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+	}
+
+	.footer__iconTitle {
+		@include mixins.fontSize(15px, 100, 1);
+		text-align: center;
+	}
+
+	.footer__iconButton {
+		@include mixins.defaultButton();
+		width: 30px;
+		height: 30px;
+		box-sizing: border-box;
+		transition: transform 0.3s ease, color 0.3s ease;
+
+		&:hover {
+			@include mixins.hoverByLinks();
+		}
+	}
+
+	.footer__icon {
+		width: 30px;
+		height: 30px;
+	}
+}
