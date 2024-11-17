@@ -6,10 +6,10 @@ export function Header() {
 		<section className={classes.header}>
 			<img src='./logo.png' alt='logo' className={classes.header__logo} />
 			<div className={classes.header__buttonContainer}>
-				<Link className={classes.header__link} to='/sing-in'>
+				<Link className={classes.header__link} to='/sign-in'>
 					Войти
 				</Link>
-				<Link className={classes.header__link} to='/sing-up'>
+				<Link className={classes.header__link} to='/sign-up'>
 					Регистрация
 				</Link>
 			</div>
