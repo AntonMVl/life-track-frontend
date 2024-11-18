@@ -6,9 +6,22 @@ export function SignIn() {
 	return (
 		<>
 			<Header />
-			<h1 className={classes.signIn__title}>Добро пожаловать!</h1>
 			<section className={classes.signIn}>
-				<form method='post' noValidate className={classes.signIn__form}></form>
+				<h1 className={classes.signIn__title}>Добро пожаловать!</h1>
+				<form method='post' noValidate className={classes.signIn__form}>
+					<fieldset className={classes.signIn__formContainer}>
+						<label htmlFor='email' className={classes.signIn__inputName}>
+							Ваш E-mail:
+						</label>
+						<input
+							type='email'
+							id='email'
+							name='email'
+							autoComplete='off'
+							className={classes.signIn__input}
+						/>
+					</fieldset>
+				</form>
 			</section>
 			<Footer />
 		</>

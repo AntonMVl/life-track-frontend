@@ -1,11 +1,43 @@
-.signIn__title {
-	text-align: center;
-}
+@use '../../styles/mixins/mixins' as mixins;
 
 .signIn {
 	width: 100%;
+	display: flex;
+
+	align-items: center;
+	flex-direction: column;
+	box-sizing: border-box;
+	height: 100vh;
+	margin-top: 15vh;
+}
+
+.signIn__title {
+	text-align: center;
+	margin-bottom: 5vh;
 }
 
 .signIn__form {
+	width: 30vw;
+	box-sizing: border-box;
+}
+
+.signIn__formContainer {
 	width: 100%;
+	border: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.signIn__inputName {
+	@include mixins.fontSize(15px, 500, 15.11px);
+}
+
+.signIn__input {
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid rgb(69, 173, 233);
+	width: 100%;
+	color: #fff;
+	outline: none;
 }
